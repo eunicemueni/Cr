@@ -285,3 +285,695 @@
 </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kairah Studio - Prompt Library</title>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1424;
+    color: white;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #D4AF37;
+    margin-bottom: 50px;
+  }
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .category-card {
+    flex: 1 1 250px;
+    background-color: #2e1f3a;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(212,175,55,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px #D4AF37, 0 0 50px #0FB9B1;
+  }
+  .category-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #D4AF37;
+  }
+  .category-card p {
+    font-size: 1rem;
+    color: #0FB9B1;
+    font-weight: bold;
+  }
+  .btn {
+    display: block;
+    margin: 40px auto 0;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    background-color: #D4AF37;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #0FB9B1;
+    color: white;
+    box-shadow: 0 0 30px #0FB9B1, 0 0 50px #D4AF37;
+  }
+  @media(max-width:768px){
+    h1 { font-size: 2.2rem; }
+    .category-card p { font-size: 0.9rem; }
+    .btn { padding: 12px 25px; font-size: 0.9rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Prompt Library</h1>
+  <div class="categories">
+    <div class="category-card">
+      <h3>Funny</h3>
+      <p>Generate humorous AI videos to entertain your audience instantly.</p>
+    </div>
+    <div class="category-card">
+      <h3>Royal</h3>
+      <p>Create cinematic videos with a regal, majestic vibe.</p>
+    </div>
+    <div class="category-card">
+      <h3>Baby</h3>
+      <p>Sweet, heartwarming AI-generated videos suitable for families.</p>
+    </div>
+    <div class="category-card">
+      <h3>Fantasy</h3>
+      <p>Unleash imagination with magical and mystical visuals.</p>
+    </div>
+    <div class="category-card">
+      <h3>Cinematic</h3>
+      <p>High-quality cinematic templates with professional style.</p>
+    </div>
+    <div class="category-card">
+      <h3>Trending</h3>
+      <p>AI videos based on viral trends and social media hits.</p>
+    </div>
+  </div>
+
+  <a href="video.html" class="btn">Start Creating</a>
+</div>
+</body>
+</html>
+<!-- Pricing Section -->
+<section class="py-16 px-4 bg-gray-900 text-white">
+  <h2 class="text-4xl font-bold text-center mb-12" style="color:#D4AF37;">Pricing & Plans</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+
+    <!-- Free Plan -->
+    <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center">
+      <h3 class="text-2xl font-bold mb-2" style="color:#D4AF37;">Free</h3>
+      <p class="mb-2">₤0 / month</p>
+      <ul class="mb-4 list-disc list-inside text-left">
+        <li>1 short teaser video</li>
+        <li>Limited resolution</li>
+        <li>Kairah Fame Booster: Not included</li>
+      </ul>
+      <button class="bg-gray-600 text-gray-300 px-6 py-2 rounded-lg cursor-not-allowed">Included</button>
+    </div>
+
+    <!-- Pro Plan -->
+    <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center">
+      <h3 class="text-2xl font-bold mb-2" style="color:#D4AF37;">Pro</h3>
+      <p>$19 / month</p>
+      <p class="mb-2 text-yellow-400 font-semibold">Yearly: $300 / year</p>
+      <ul class="mb-4 list-disc list-inside text-left">
+        <li>10 full-quality videos per month</li>
+        <li>Faster rendering</li>
+        <li>Standard cinematic effects</li>
+        <li>Kairah Fame Booster: Free 30 days</li>
+      </ul>
+      <div class="flex flex-col gap-2 w-full">
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/paypal.svg" class="w-10 mx-auto"> PayPal</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/stripe.svg" class="w-10 mx-auto"> Stripe</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/paystack.svg" class="w-10 mx-auto"> Paystack</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/wise.svg" class="w-10 mx-auto"> Wise</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mpesa.svg" class="w-10 mx-auto"> M-Pesa</a>
+      </div>
+    </div>
+
+    <!-- Diamond Plan -->
+    <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center">
+      <h3 class="text-2xl font-bold mb-2" style="color:#D4AF37;">Diamond</h3>
+      <p>$49 / month</p>
+      <p class="mb-2 text-yellow-400 font-semibold">Yearly: $450 / year</p>
+      <ul class="mb-4 list-disc list-inside text-left">
+        <li>Unlimited HD videos</li>
+        <li>Priority rendering</li>
+        <li>Premium effects & transitions</li>
+        <li>Kairah Fame Booster: Free 6 months</li>
+      </ul>
+      <div class="flex flex-col gap-2 w-full">
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/paypal.svg" class="w-10 mx-auto"> PayPal</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/stripe.svg" class="w-10 mx-auto"> Stripe</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/paystack.svg" class="w-10 mx-auto"> Paystack</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/wise.svg" class="w-10 mx-auto"> Wise</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mpesa.svg" class="w-10 mx-auto"> M-Pesa</a>
+      </div>
+    </div>
+
+    <!-- Cinematic Plan -->
+    <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center">
+      <h3 class="text-2xl font-bold mb-2" style="color:#D4AF37;">Cinematic</h3>
+      <p>$99 / month</p>
+      <p class="mb-2 text-yellow-400 font-semibold">Yearly: $600 / year</p>
+      <ul class="mb-4 list-disc list-inside text-left">
+        <li>Unlimited ultra-HD videos</li>
+        <li>Advanced cinematic filters</li>
+        <li>Sound-enhanced AI voice scenes</li>
+        <li>Kairah Fame Booster: Free permanently</li>
+      </ul>
+      <div class="flex flex-col gap-2 w-full">
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/paypal.svg" class="w-10 mx-auto"> PayPal</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/stripe.svg" class="w-10 mx-auto"> Stripe</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/paystack.svg" class="w-10 mx-auto"> Paystack</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/wise.svg" class="w-10 mx-auto"> Wise</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mpesa.svg" class="w-10 mx-auto"> M-Pesa</a>
+      </div>
+    </div>
+
+    <!-- Lifetime Plan -->
+    <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center">
+      <h3 class="text-2xl font-bold mb-2" style="color:#D4AF37;">Lifetime</h3>
+      <p>$500 / one-time</p>
+      <ul class="mb-4 list-disc list-inside text-left">
+        <li>Unlimited cinematic generation</li>
+        <li>All future features included</li>
+        <li>Lifetime priority support</li>
+        <li>Kairah Fame Booster: Free permanently</li>
+      </ul>
+      <div class="flex flex-col gap-2 w-full">
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/paypal.svg" class="w-10 mx-auto"> PayPal</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/stripe.svg" class="w-10 mx-auto"> Stripe</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/paystack.svg" class="w-10 mx-auto"> Paystack</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/wise.svg" class="w-10 mx-auto"> Wise</a>
+        <a href="#" class="btn-pay"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mpesa.svg" class="w-10 mx-auto"> M-Pesa</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Tailwind + extra styles -->
+<style>
+.btn-pay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #D4AF37;
+  color: black;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.btn-pay img { margin-right: 10px; }
+.btn-pay:hover { background:#0FB9B1; color:white; }
+.plan-card ul li { margin-bottom:5px; }
+</style>
+<!-- FAQ Section -->
+<section class="py-16 px-4 bg-gray-900 text-white">
+  <h2 class="text-4xl font-bold text-center mb-12" style="color:#D4AF37;">Frequently Asked Questions</h2>
+
+  <div class="max-w-4xl mx-auto space-y-4">
+    <!-- Question 1 -->
+    <div class="faq-item border border-gray-700 rounded-lg overflow-hidden">
+      <button class="faq-question w-full text-left px-6 py-4 bg-gray-800 hover:bg-gray-700 flex justify-between items-center">
+        <span class="font-semibold">How do I create my first AI video?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer px-6 py-4 bg-gray-900 hidden">
+        Go to the Video Creation dashboard, select your input type (Photo → Video or Prompt → Video), set your desired duration and cinematic style, and click "Render". The video will appear in your history when done.
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="faq-item border border-gray-700 rounded-lg overflow-hidden">
+      <button class="faq-question w-full text-left px-6 py-4 bg-gray-800 hover:bg-gray-700 flex justify-between items-center">
+        <span class="font-semibold">What video formats are supported?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer px-6 py-4 bg-gray-900 hidden">
+        Videos are exported in MP4 format. Free and Pro plans support up to HD. Diamond and Cinematic plans support Full HD to Ultra HD with cinematic quality.
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="faq-item border border-gray-700 rounded-lg overflow-hidden">
+      <button class="faq-question w-full text-left px-6 py-4 bg-gray-800 hover:bg-gray-700 flex justify-between items-center">
+        <span class="font-semibold">Can I upgrade or change my plan?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer px-6 py-4 bg-gray-900 hidden">
+        Yes! Upgrades are instant. Navigate to your account dashboard, choose your new plan, and follow the payment process. Any unused credits from your current plan are automatically prorated.
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="faq-item border border-gray-700 rounded-lg overflow-hidden">
+      <button class="faq-question w-full text-left px-6 py-4 bg-gray-800 hover:bg-gray-700 flex justify-between items-center">
+        <span class="font-semibold">Is there a free trial available?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer px-6 py-4 bg-gray-900 hidden">
+        Yes, the Free plan gives 1 short teaser video (up to 6 seconds). It’s perfect to explore Kairah Studio without commitment.
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="faq-item border border-gray-700 rounded-lg overflow-hidden">
+      <button class="faq-question w-full text-left px-6 py-4 bg-gray-800 hover:bg-gray-700 flex justify-between items-center">
+        <span class="font-semibold">How do affiliate payouts work?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer px-6 py-4 bg-gray-900 hidden">
+        Earn 30% commission for every referred subscription. Lifetime plan bonus pays $500 for every 100 sales. Track clicks, conversions, and payouts from your dashboard.
+      </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="faq-item border border-gray-700 rounded-lg overflow-hidden">
+      <button class="faq-question w-full text-left px-6 py-4 bg-gray-800 hover:bg-gray-700 flex justify-between items-center">
+        <span class="font-semibold">What is the Kairah Fame Booster?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer px-6 py-4 bg-gray-900 hidden">
+        The Fame Booster is an AI-powered promotion tool that increases your video reach and virality. It’s included for limited periods depending on your plan.
+      </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="faq-item border border-gray-700 rounded-lg overflow-hidden">
+      <button class="faq-question w-full text-left px-6 py-4 bg-gray-800 hover:bg-gray-700 flex justify-between items-center">
+        <span class="font-semibold">Are payments secure?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer px-6 py-4 bg-gray-900 hidden">
+        Yes, all transactions are handled by secure, industry-standard gateways: PayPal, Stripe, Paystack, Wise, and M-Pesa. Your data and payments are safe.
+      </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="faq-item border border-gray-700 rounded-lg overflow-hidden">
+      <button class="faq-question w-full text-left px-6 py-4 bg-gray-800 hover:bg-gray-700 flex justify-between items-center">
+        <span class="font-semibold">Can I cancel my subscription anytime?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer px-6 py-4 bg-gray-900 hidden">
+        Absolutely. Subscriptions can be canceled instantly from your dashboard. Your remaining credits remain available until the end of your billing cycle.
+      </div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="faq-item border border-gray-700 rounded-lg overflow-hidden">
+      <button class="faq-question w-full text-left px-6 py-4 bg-gray-800 hover:bg-gray-700 flex justify-between items-center">
+        <span class="font-semibold">Is support available 24/7?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer px-6 py-4 bg-gray-900 hidden">
+        Support is primarily email-based. You can expect a response within 24 hours. Premium plan users receive priority support.
+      </div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="faq-item border border-gray-700 rounded-lg overflow-hidden">
+      <button class="faq-question w-full text-left px-6 py-4 bg-gray-800 hover:bg-gray-700 flex justify-between items-center">
+        <span class="font-semibold">Can I request custom videos?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer px-6 py-4 bg-gray-900 hidden">
+        Yes! For custom AI video requests, contact support with your concept. We provide personalized guidance and assistance for unique creations.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ Toggle Script -->
+<script>
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const answer = button.nextElementSibling;
+      const toggle = button.querySelector('.faq-toggle');
+      answer.classList.toggle('hidden');
+      toggle.textContent = toggle.textContent === '+' ? '−' : '+';
+    });
+  });
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kairah Studio — Affiliate Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-poppins">
+
+<!-- Header -->
+<header class="bg-[#3D2C41] py-6 text-center">
+  <h1 class="text-4xl font-bold text-[#D4AF37]">KAIRAH STUDIO AFFILIATES</h1>
+  <p class="mt-2 text-[#0FB9B1] font-semibold">Earn 30% commission on every referral!</p>
+</header>
+
+<!-- Overview -->
+<section class="p-6 grid md:grid-cols-3 gap-6 text-center">
+  <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+    <h2 class="text-xl font-semibold">Total Referrals</h2>
+    <p class="text-3xl mt-2">12</p>
+  </div>
+  <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+    <h2 class="text-xl font-semibold">Total Commission Earned</h2>
+    <p class="text-3xl mt-2">$234.00</p>
+  </div>
+  <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+    <h2 class="text-xl font-semibold">Pending Commission</h2>
+    <p class="text-3xl mt-2">$57.00</p>
+  </div>
+</section>
+
+<!-- Referral Link -->
+<section class="p-6 bg-gray-800 rounded-xl mx-6 my-6 text-center">
+  <h2 class="text-2xl font-semibold mb-4">Your Unique Referral Link</h2>
+  <input id="affiliateLink" type="text" value="https://kairahstudio.com/referral?user=ABC123" readonly class="w-full p-3 rounded-lg text-black"/>
+  <button onclick="copyLink()" class="mt-4 px-6 py-2 bg-[#D4AF37] text-black font-semibold rounded-full hover:bg-[#b9962f] transition">Copy Link</button>
+  <div class="mt-4 flex justify-center gap-4">
+    <button onclick="shareWhatsApp()" class="bg-[#25D366] px-4 py-2 rounded-lg font-semibold">WhatsApp</button>
+    <button onclick="shareFacebook()" class="bg-[#3b5998] px-4 py-2 rounded-lg font-semibold">Facebook</button>
+    <button onclick="shareTwitter()" class="bg-[#1DA1F2] px-4 py-2 rounded-lg font-semibold">Twitter</button>
+    <button onclick="shareEmail()" class="bg-gray-700 px-4 py-2 rounded-lg font-semibold">Email</button>
+  </div>
+  <div class="mt-4">
+    <p>Potential Earnings Example:</p>
+    <p>Pro Plan $19 → You earn $5.70 (30%)</p>
+    <p>Diamond Plan $49 → You earn $14.70 (30%)</p>
+    <p>Cinematic Plan $99 → You earn $29.70 (30%)</p>
+  </div>
+</section>
+
+<!-- Commission Table -->
+<section class="p-6 mx-6 bg-gray-800 rounded-xl">
+  <h2 class="text-2xl font-semibold mb-4">Commission Details</h2>
+  <div class="overflow-x-auto">
+    <table class="min-w-full text-left border-collapse">
+      <thead>
+        <tr class="border-b border-gray-700">
+          <th class="p-3">Date</th>
+          <th class="p-3">Referral</th>
+          <th class="p-3">Plan</th>
+          <th class="p-3">Amount ($)</th>
+          <th class="p-3">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-gray-700 hover:bg-gray-700 transition">
+          <td class="p-3">2025-11-02</td>
+          <td class="p-3">John Doe</td>
+          <td class="p-3">Pro</td>
+          <td class="p-3">5.70</td>
+          <td class="p-3">Paid</td>
+        </tr>
+        <tr class="border-b border-gray-700 hover:bg-gray-700 transition">
+          <td class="p-3">2025-11-01</td>
+          <td class="p-3">Mary Jane</td>
+          <td class="p-3">Diamond</td>
+          <td class="p-3">14.70</td>
+          <td class="p-3">Pending</td>
+        </tr>
+        <tr class="border-b border-gray-700 hover:bg-gray-700 transition">
+          <td class="p-3">2025-10-30</td>
+          <td class="p-3">Alice Smith</td>
+          <td class="p-3">Cinematic</td>
+          <td class="p-3">29.70</td>
+          <td class="p-3">Paid</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Withdraw Options -->
+<section class="p-6 mx-6 my-6 bg-gray-800 rounded-xl text-center">
+  <h2 class="text-2xl font-semibold mb-4">Withdraw Earnings</h2>
+  <div class="flex flex-wrap justify-center gap-4">
+    <button class="px-6 py-3 bg-[#0070BA] text-white rounded-lg font-semibold hover:bg-[#005ea6]" onclick="alert('PayPal withdrawal integration')">PayPal</button>
+    <button class="px-6 py-3 bg-[#25D366] text-black rounded-lg font-semibold hover:bg-[#1fa94f]" onclick="alert('M-Pesa withdrawal integration')">M-Pesa</button>
+    <button class="px-6 py-3 bg-[#0FB9B1] text-black rounded-lg font-semibold hover:bg-[#0aa8a0]" onclick="alert('Wise withdrawal integration')">Wise</button>
+    <button class="px-6 py-3 bg-[#6772e5] text-white rounded-lg font-semibold hover:bg-[#5461c8]" onclick="alert('Stripe withdrawal integration')">Stripe</button>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#3D2C41] text-center py-4 mt-6 text-gray-300">
+  © 2025 Kairah Studio — Affiliate Dashboard
+</footer>
+
+<script>
+  function copyLink() {
+    const copyText = document.getElementById("affiliateLink");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+    alert("Affiliate link copied!");
+  }
+
+  function shareWhatsApp() {
+    const link = document.getElementById("affiliateLink").value;
+    window.open(`https://wa.me/?text=Join%20Kairah%20Studio%20using%20my%20link:%20${link}`, "_blank");
+  }
+
+  function shareFacebook() {
+    const link = document.getElementById("affiliateLink").value;
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${link}`, "_blank");
+  }
+
+  function shareTwitter() {
+    const link = document.getElementById("affiliateLink").value;
+    window.open(`https://twitter.com/intent/tweet?url=${link}&text=Join%20Kairah%20Studio!`, "_blank");
+  }
+
+  function shareEmail() {
+    const link = document.getElementById("affiliateLink").value;
+    window.open(`mailto:?subject=Join Kairah Studio&body=Check out Kairah Studio and earn 30% commission! Use my link: ${link}`);
+  }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kairah Studio — Support</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-poppins">
+
+<!-- Header -->
+<header class="bg-[#3D2C41] py-6 text-center">
+  <h1 class="text-4xl font-bold text-[#D4AF37]">KAIRAH STUDIO SUPPORT</h1>
+  <p class="mt-2 text-[#0FB9B1] font-semibold">We are here to help you 24/7 — Reach out anytime</p>
+</header>
+
+<!-- Contact Section -->
+<section class="p-6 mx-6 my-6 bg-gray-800 rounded-xl">
+  <h2 class="text-2xl font-semibold mb-4">Contact Information</h2>
+  <div class="flex flex-col md:flex-row md:justify-between gap-6">
+    <!-- Email Support -->
+    <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex-1">
+      <h3 class="text-xl font-semibold mb-2">Email Support</h3>
+      <p class="mb-2">For all inquiries, technical support, or account issues, email us at:</p>
+      <a href="mailto:keishapoa@gmail.com" class="text-[#D4AF37] font-bold hover:underline">keishapoa@gmail.com</a>
+      <p class="mt-2 text-sm text-gray-300">We usually respond within 24 hours.</p>
+    </div>
+
+    <!-- Phone/WhatsApp Support -->
+    <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex-1">
+      <h3 class="text-xl font-semibold mb-2">WhatsApp Support</h3>
+      <p class="mb-2">Chat with us directly via WhatsApp for faster responses:</p>
+      <a href="https://wa.me/254113554446" target="_blank" class="text-[#0FB9B1] font-bold hover:underline">+254 113 554 446</a>
+      <p class="mt-2 text-sm text-gray-300">Available 9 AM – 9 PM (EAT)</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex-1">
+      <h3 class="text-xl font-semibold mb-2">Social Media Support</h3>
+      <p class="mb-2">Reach out via our official pages for updates or quick help:</p>
+      <div class="flex gap-4 mt-2">
+        <a href="https://www.facebook.com/KairahOfficial" target="_blank" class="bg-[#3b5998] px-4 py-2 rounded-lg font-semibold hover:bg-[#2d4373]">Facebook</a>
+        <a href="https://twitter.com/KairahOfficial" target="_blank" class="bg-[#1DA1F2] px-4 py-2 rounded-lg font-semibold hover:bg-[#0d8ddb]">Twitter</a>
+        <a href="https://www.instagram.com/KairahOfficial" target="_blank" class="bg-[#E1306C] px-4 py-2 rounded-lg font-semibold hover:bg-[#b12a5b]">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section class="p-6 mx-6 my-6 bg-gray-800 rounded-xl">
+  <h2 class="text-2xl font-semibold mb-4">Send Us a Message</h2>
+  <form action="mailto:keishapoa@gmail.com" method="post" enctype="text/plain" class="flex flex-col gap-4">
+    <input type="text" name="name" placeholder="Your Name" required class="p-3 rounded-lg text-black w-full"/>
+    <input type="email" name="email" placeholder="Your Email" required class="p-3 rounded-lg text-black w-full"/>
+    <input type="text" name="subject" placeholder="Subject" required class="p-3 rounded-lg text-black w-full"/>
+    <textarea name="message" rows="5" placeholder="Your Message" required class="p-3 rounded-lg text-black w-full"></textarea>
+    <button type="submit" class="px-6 py-3 bg-[#D4AF37] text-black font-semibold rounded-full hover:bg-[#b9962f] transition w-full">Send Message</button>
+  </form>
+  <p class="mt-4 text-sm text-gray-300">Note: Your message will be sent directly to <span class="font-bold">keishapoa@gmail.com</span>.</p>
+</section>
+
+<!-- FAQ Section -->
+<section class="p-6 mx-6 my-6 bg-gray-800 rounded-xl">
+  <h2 class="text-2xl font-semibold mb-4">Frequently Asked Questions</h2>
+  <div class="flex flex-col gap-4">
+    <div>
+      <button class="accordion w-full text-left p-3 bg-gray-700 rounded-lg">How do I reset my password?</button>
+      <div class="panel p-3 bg-gray-600 rounded-b-lg hidden">Click "Forgot Password" on the login page, enter your email, and follow the instructions to reset your password.</div>
+    </div>
+    <div>
+      <button class="accordion w-full text-left p-3 bg-gray-700 rounded-lg">How do I update my payment info?</button>
+      <div class="panel p-3 bg-gray-600 rounded-b-lg hidden">Go to your account settings, select "Billing," and update your payment details securely.</div>
+    </div>
+    <div>
+      <button class="accordion w-full text-left p-3 bg-gray-700 rounded-lg">Can I upgrade my plan?</button>
+      <div class="panel p-3 bg-gray-600 rounded-b-lg hidden">Yes, upgrades are instant and prorated. Navigate to the Pricing page and select your desired plan.</div>
+    </div>
+    <div>
+      <button class="accordion w-full text-left p-3 bg-gray-700 rounded-lg">Is support available 24/7?</button>
+      <div class="panel p-3 bg-gray-600 rounded-b-lg hidden">We provide email support 24/7. WhatsApp support is available 9 AM – 9 PM EAT.</div>
+    </div>
+    <div>
+      <button class="accordion w-full text-left p-3 bg-gray-700 rounded-lg">How long does it take to respond?</button>
+      <div class="panel p-3 bg-gray-600 rounded-b-lg hidden">Our team usually responds within 24 hours via email or WhatsApp.</div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#3D2C41] text-center py-4 mt-6 text-gray-300">
+  © 2025 Kairah Studio — Support & Contact
+</footer>
+
+<script>
+  // Accordion toggle
+  document.querySelectorAll('.accordion').forEach(item => {
+    item.addEventListener('click', () => {
+      const panel = item.nextElementSibling;
+      panel.classList.toggle('hidden');
+    });
+  });
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kairah Studio — Legal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-poppins">
+
+<!-- Header -->
+<header class="bg-[#3D2C41] py-6 text-center">
+  <h1 class="text-4xl font-bold text-[#D4AF37]">KAIRAH STUDIO LEGAL</h1>
+  <p class="mt-2 text-[#0FB9B1] font-semibold">Terms, Policies, and Disclaimer</p>
+</header>
+
+<!-- Accordion Sections -->
+<section class="p-6 mx-6 my-6 bg-gray-800 rounded-xl">
+  <h2 class="text-2xl font-semibold mb-4">Click to View</h2>
+
+  <!-- Terms of Service -->
+  <div class="mb-4">
+    <button class="accordion w-full text-left p-4 bg-gray-700 rounded-lg font-semibold hover:bg-gray-600 transition">
+      Terms of Service
+    </button>
+    <div class="panel p-4 bg-gray-600 rounded-b-lg hidden">
+      <p>Welcome to Kairah Studio. By accessing or using our services, you agree to comply with the following terms and conditions:</p>
+      <ul class="list-disc list-inside mt-2">
+        <li>Use our AI tools responsibly and legally.</li>
+        <li>Do not attempt to hack or bypass our systems.</li>
+        <li>All content generated belongs to the user, but Kairah Studio reserves rights to moderation and compliance checks.</li>
+        <li>Subscriptions and payments are binding according to selected plans.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Privacy Policy -->
+  <div class="mb-4">
+    <button class="accordion w-full text-left p-4 bg-gray-700 rounded-lg font-semibold hover:bg-gray-600 transition">
+      Privacy Policy
+    </button>
+    <div class="panel p-4 bg-gray-600 rounded-b-lg hidden">
+      <p>Kairah Studio values your privacy. Information we collect and how it is used:</p>
+      <ul class="list-disc list-inside mt-2">
+        <li>We collect email, username, and payment info to process subscriptions.</li>
+        <li>We never sell your data to third parties.</li>
+        <li>Cookies and analytics are used to improve user experience.</li>
+        <li>Users can request account deletion at any time.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="mb-4">
+    <button class="accordion w-full text-left p-4 bg-gray-700 rounded-lg font-semibold hover:bg-gray-600 transition">
+      Disclaimer
+    </button>
+    <div class="panel p-4 bg-gray-600 rounded-b-lg hidden">
+      <p>All AI-generated content is provided "as-is". Kairah Studio is not responsible for:</p>
+      <ul class="list-disc list-inside mt-2">
+        <li>Misuse of generated videos or content.</li>
+        <li>Any third-party legal issues resulting from content creation.</li>
+        <li>Guarantees of financial, artistic, or viral success.</li>
+      </ul>
+      <p>Use our tools responsibly and at your own risk.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#3D2C41] text-center py-4 mt-6 text-gray-300">
+  © 2025 Kairah Studio — Terms, Policies & Disclaimer
+</footer>
+
+<script>
+  // Accordion toggle
+  document.querySelectorAll('.accordion').forEach(item => {
+    item.addEventListener('click', () => {
+      const panel = item.nextElementSibling;
+      panel.classList.toggle('hidden');
+    });
+  });
+</script>
+
+</body>
+</html>
