@@ -67,58 +67,221 @@
       </div>
     </div>
   </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kairah Studio - Dashboard</title>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1424;
+    color: white;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #D4AF37;
+    margin-bottom: 50px;
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .card {
+    flex: 1 1 250px;
+    background-color: #2e1f3a;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(212,175,55,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px #D4AF37, 0 0 50px #0FB9B1;
+  }
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #D4AF37;
+  }
+  .card p {
+    font-size: 2rem;
+    color: #0FB9B1;
+    font-weight: bold;
+  }
+  .actions {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .btn {
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    background-color: #D4AF37;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #0FB9B1;
+    color: white;
+    box-shadow: 0 0 30px #0FB9B1, 0 0 50px #D4AF37;
+  }
+  @media(max-width:768px){
+    h1 { font-size: 2.2rem; }
+    .card p { font-size: 1.5rem; }
+    .btn { padding: 12px 25px; font-size: 0.9rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Dashboard Overview</h1>
+  <div class="grid">
+    <div class="card">
+      <h3>Total Videos Created</h3>
+      <p>12</p>
+    </div>
+    <div class="card">
+      <h3>Credits & Plan Limits</h3>
+      <p>10 / 30</p>
+    </div>
+    <div class="card">
+      <h3>Fame Booster Status</h3>
+      <p>Active</p>
+    </div>
+  </div>
 
+  <div class="actions">
+    <a href="video.html" class="btn">Create Video</a>
+    <a href="prompt.html" class="btn">Access Prompt Library</a>
+    <a href="#" class="btn">View History</a>
+  </div>
+</div>
 </body>
 </html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kairah Studio - Video Creation</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kairah Studio - Video Creation</title>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1424;
+    color: white;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #D4AF37;
+    margin-bottom: 50px;
+  }
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .tool-card {
+    flex: 1 1 250px;
+    background-color: #2e1f3a;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(212,175,55,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .tool-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px #D4AF37, 0 0 50px #0FB9B1;
+  }
+  .tool-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #D4AF37;
+  }
+  .tool-card p {
+    font-size: 1rem;
+    color: #0FB9B1;
+    font-weight: bold;
+  }
+  .btn {
+    display: block;
+    margin: 40px auto 0;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    background-color: #D4AF37;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #0FB9B1;
+    color: white;
+    box-shadow: 0 0 30px #0FB9B1, 0 0 50px #D4AF37;
+  }
+  @media(max-width:768px){
+    h1 { font-size: 2.2rem; }
+    .tool-card p { font-size: 0.9rem; }
+    .btn { padding: 12px 25px; font-size: 0.9rem; }
+  }
+</style>
 </head>
-<body class="bg-gray-900 text-white font-sans min-h-screen">
-
-  <section class="p-12">
-    <h2 class="text-4xl font-bold text-center text-[#D4AF37] mb-12">Video Creation Tools</h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-[#D4AF37]/50 transition">
-        <h3 class="text-2xl font-semibold mb-2">Photo → Video AI Generator</h3>
-        <p>Upload images and transform them into cinematic videos automatically.</p>
-      </div>
-
-      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-[#D4AF37]/50 transition">
-        <h3 class="text-2xl font-semibold mb-2">Prompt → Video Creation</h3>
-        <p>Type any scene or idea, and watch AI turn it into a stunning video.</p>
-      </div>
-
-      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-[#D4AF37]/50 transition">
-        <h3 class="text-2xl font-semibold mb-2">Lip-sync AI with Uploaded Audio</h3>
-        <p>AI matches facial movements to any uploaded voice or sound clip.</p>
-      </div>
-
-      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-[#D4AF37]/50 transition">
-        <h3 class="text-2xl font-semibold mb-2">Background Music & Voiceover AI</h3>
-        <p>Automatically add cinematic music or AI-generated voiceovers.</p>
-      </div>
-
-      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-[#D4AF37]/50 transition">
-        <h3 class="text-2xl font-semibold mb-2">Effects, Filters & Cinematic Styles</h3>
-        <p>Enhance videos with professional effects and unique visual styles.</p>
-      </div>
-
-      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-[#D4AF37]/50 transition">
-        <h3 class="text-2xl font-semibold mb-2">Preview & Download</h3>
-        <p>Check your video in real-time and download in HD quality.</p>
-      </div>
+<body>
+<div class="container">
+  <h1>Video Creation Tools</h1>
+  <div class="tools">
+    <div class="tool-card">
+      <h3>Photo → Video AI Generator</h3>
+      <p>Upload photos to generate cinematic AI videos instantly.</p>
     </div>
-
-    <div class="text-center mt-12">
-      <button class="px-12 py-4 rounded-full bg-[#D4AF37] font-bold hover:bg-[#0FB9B1] hover:text-white transition" onclick="alert('Go to Video Editor')">Start Creating</button>
+    <div class="tool-card">
+      <h3>Prompt → Video Creation</h3>
+      <p>Enter your prompt to create custom videos automatically.</p>
     </div>
-  </section>
-
+    <div class="tool-card">
+      <h3>Lip-sync & Audio</h3>
+      <p>Upload voice or music and sync perfectly with AI-generated visuals.</p>
+    </div>
+    <div class="tool-card">
+      <h3>Effects & Filters</h3>
+      <p>Add cinematic filters, transitions, and visual effects.</p>
+    </div>
+    <div class="tool-card">
+      <h3>Preview & Download</h3>
+      <p>Check your video and download in high quality.</p>
+    </div>
+  </div>
+  <a href="#" class="btn">Start Creating</a>
+</div>
 </body>
 </html>
